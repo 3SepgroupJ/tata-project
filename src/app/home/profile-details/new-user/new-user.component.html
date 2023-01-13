@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col-md-4">
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>Employee Type</mat-label>
+            <mat-select [(ngModel)]="customerObj.employeeType" name="Employee-Type" id="id1">
+                <mat-option *ngFor="let etype of employeeType" [value]="etype.value">
+                {{etype.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="col-md-4">
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>Mobile No</mat-label>
+            <input matInput name="MobileNo" [(ngModel)]="customerObj.mobileNo" name="mobileNo" id="id2">
+          </mat-form-field>
+    </div>
+    <div class="col-md-4">
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>Pan No</mat-label>
+            <input matInput name="Pan No" [(ngModel)]="customerObj.pan" name="panNo" id="id3">
+          </mat-form-field>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>First Name (as per PAN card)</mat-label>
+            <input matInput name="Pan No" [(ngModel)]="customerObj.firstName"  name="firstName" id="id7">
+          </mat-form-field>
+    </div>
+    <div class="col-md-4">
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>Last Name (as per PAN card)</mat-label>
+            <input matInput name="Pan No" [(ngModel)]="customerObj.lastName" name="lastName" id="id8">
+          </mat-form-field>
+    </div>
+    <!-- <div class="col-md-4">
+        <mat-form-field appearance="fill">
+            <mat-label>Date Of Birth</mat-label>
+            <input matInput [matDatepicker]="picker" name="dob" id="id9" [(ngModel)]="customerObj.dob">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    </div> -->
+</div>
+<div class="row">
+<div class="col-md-4">
+    <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Gender</mat-label>
+        <mat-select [(ngModel)]="customerObj.gender" name="Gender" id="id4">
+            <mat-option *ngFor="let type of gender" [value]="type.value">
+            {{type.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+</div>
+<div class="col-md-4">
+    <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>City Name</mat-label>
+        <input matInput name="Pan No" [(ngModel)]="customerObj.city" name="cityName" id="id5">
+      </mat-form-field>
+</div>
+<div class="col-md-4">
+    <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Pin Code</mat-label>
+        <input matInput name="Pan No" [(ngModel)]="customerObj.pincode" name="pinCode" id="id6">
+      </mat-form-field>
+</div>
+</div>
+
+<div class="row text-center">
+    <button mat-raised-button color="primary">Continue</button>
+</div>

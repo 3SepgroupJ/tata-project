@@ -1,0 +1,31 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.bgclass{
+  background-color:#005899;
+}  
+
+.bgheader{
+  background-color: white;
+}
+
+.font-size{
+    color: black;
+    font-size: 13px;
+}
+
+.giftclass{
+    background-color: #a7c60b;
+}
+
+.bgclass:hover{
+    background-color: #a7c60b;
+}
+
+.font-size:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration-color: #a7c60b;
+}

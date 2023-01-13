@@ -1,0 +1,16 @@
+<div class="profile">
+  <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>New Customer</ng-template>
+      <app-new-user></app-new-user>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+      <ng-template matStepLabel>Existing User</ng-template>
+      <app-existing-user></app-existing-user>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Track My Application</ng-template>
+      <app-track-my-application></app-track-my-application>
+    </mat-step>
+  </mat-stepper>
+</div>
