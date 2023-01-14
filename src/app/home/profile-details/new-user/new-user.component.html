@@ -1,8 +1,9 @@
+<form [formGroup]="customerForm" (ngSubmit)="submitForm()">
 <div class="row">
     <div class="col-md-4">
         <mat-form-field appearance="fill" class="example-full-width">
             <mat-label>Employee Type</mat-label>
-            <mat-select [(ngModel)]="customerObj.employeeType" name="Employee-Type" id="id1">
+            <mat-select name="Employee-Type" id="id1" formControlName="employeeType">
                 <mat-option *ngFor="let etype of employeeType" [value]="etype.value">
                 {{etype.viewValue}}
               </mat-option>
@@ -12,44 +13,44 @@
     <div class="col-md-4">
         <mat-form-field appearance="fill" class="example-full-width">
             <mat-label>Mobile No</mat-label>
-            <input matInput name="MobileNo" [(ngModel)]="customerObj.mobileNo" name="mobileNo" id="id2">
+            <input matInput name="MobileNo" name="mobileNo" id="id2" appOnlyNumber (ngModelChange)="sendOtp()" formControlName="mobileNo">
           </mat-form-field>
     </div>
     <div class="col-md-4">
         <mat-form-field appearance="fill" class="example-full-width">
             <mat-label>Pan No</mat-label>
-            <input matInput name="Pan No" [(ngModel)]="customerObj.pan" name="panNo" id="id3">
+            <input matInput name="Pan No" name="panNo" id="id3" formControlName="pan">
           </mat-form-field>
     </div>
-</div>
+  </div>
 <div class="row">
     <div class="col-md-4">
         <mat-form-field appearance="fill" class="example-full-width">
             <mat-label>First Name (as per PAN card)</mat-label>
-            <input matInput name="Pan No" [(ngModel)]="customerObj.firstName"  name="firstName" id="id7">
+            <input matInput name="Pan No"  name="firstName" id="id7" formControlName="firstName">
           </mat-form-field>
     </div>
     <div class="col-md-4">
         <mat-form-field appearance="fill" class="example-full-width">
             <mat-label>Last Name (as per PAN card)</mat-label>
-            <input matInput name="Pan No" [(ngModel)]="customerObj.lastName" name="lastName" id="id8">
+            <input matInput name="Pan No" name="lastName" id="id8" formControlName="lastName">
           </mat-form-field>
     </div>
-    <!-- <div class="col-md-4">
-        <mat-form-field appearance="fill">
+    <div class="col-md-4">
+        <mat-form-field appearance="fill" class="example-full-width">
             <mat-label>Date Of Birth</mat-label>
-            <input matInput [matDatepicker]="picker" name="dob" id="id9" [(ngModel)]="customerObj.dob">
-            <mat-hint>MM/DD/YYYY</mat-hint>
+            <input matInput [matDatepicker]="picker" name="dob" id="id9" formControlName="dob">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
-    </div> -->
+    </div>
 </div>
 <div class="row">
 <div class="col-md-4">
     <mat-form-field appearance="fill" class="example-full-width">
         <mat-label>Gender</mat-label>
-        <mat-select [(ngModel)]="customerObj.gender" name="Gender" id="id4">
+        <mat-select name="Gender" id="id4" formControlName="gender">
             <mat-option *ngFor="let type of gender" [value]="type.value">
             {{type.viewValue}}
           </mat-option>
@@ -59,17 +60,18 @@
 <div class="col-md-4">
     <mat-form-field appearance="fill" class="example-full-width">
         <mat-label>City Name</mat-label>
-        <input matInput name="Pan No" [(ngModel)]="customerObj.city" name="cityName" id="id5">
+        <input matInput name="Pan No" name="cityName" id="id5" formControlName="city">
       </mat-form-field>
 </div>
 <div class="col-md-4">
     <mat-form-field appearance="fill" class="example-full-width">
         <mat-label>Pin Code</mat-label>
-        <input matInput name="Pan No" [(ngModel)]="customerObj.pincode" name="pinCode" id="id6">
+        <input matInput name="Pan No" name="pinCode" id="id6" formControlName="pincode">
       </mat-form-field>
 </div>
 </div>
 
-<div class="row text-center">
-    <button mat-raised-button color="primary">Continue</button>
+  <div class="row text-center">
+    <button mat-raised-button color="primary" type="submit">Continue</button>
 </div>
+</form>

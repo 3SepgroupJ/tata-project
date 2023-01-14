@@ -1,0 +1,6 @@
+<div class="row text-center">
+    <h4>Please Enter the Otp Send to Mobile Number {{data.mobileNo}}</h4>
+    <input type="text" name="Otp" id="id10" #otpEntered>
+    <button class="btn btn-primary mt-2" type="submit" (click)="verifyOtp(otpEntered.value)">Submit</button>
+</div>
+<p>Otp received is {{data.otp}}</p>

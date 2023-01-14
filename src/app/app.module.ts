@@ -22,6 +22,13 @@ import { TrackMyApplicationComponent } from './home/profile-details/track-my-app
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { OnlyNumberDirective } from './directive/only-number.directive';
+import { DialogBoxComponent } from './home/profile-details/dialog-box/dialog-box.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import { ExistingUserProfileDetailsComponent } from './existing-user-profile-details/existing-user-profile-details.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 const MaterialModules = [
@@ -34,7 +41,10 @@ const MaterialModules = [
   MatSliderModule,
   MatSelectModule,
   MatInputModule,
-  MatDatepickerModule
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatDialogModule,
+  MatTableModule
 ]
 
 @NgModule({
@@ -47,6 +57,9 @@ const MaterialModules = [
     NewUserComponent,
     ExistingUserComponent,
     TrackMyApplicationComponent,
+    OnlyNumberDirective,
+    DialogBoxComponent,
+    ExistingUserProfileDetailsComponent,
     
   ],
   imports: [
@@ -56,6 +69,7 @@ const MaterialModules = [
     CarouselModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     ...MaterialModules
   ],
   exports:[...MaterialModules],

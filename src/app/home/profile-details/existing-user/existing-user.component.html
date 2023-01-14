@@ -1,1 +1,26 @@
-<p>existing-user works!</p>
+<form [formGroup]="loginform" (ngSubmit)="submitLoginForm()">
+    <div class="row">
+        <div class="col-md-4">
+            <mat-form-field appearance="fill" class="example-full-width">
+                <mat-label>First Name (as per PAN card)</mat-label>
+                <input matInput name="Pan No" name="firstName" id="id7" formControlName="firstName">
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field appearance="fill" class="example-full-width">
+                <mat-label>Mobile No</mat-label>
+                <input matInput name="MobileNo" name="mobileNo" id="id2" formControlName="mobileNo">
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field appearance="fill" class="example-full-width">
+                <mat-label>Pan No</mat-label>
+                <input matInput name="Pan No" name="panNo" id="id3" formControlName="pan">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row text-center">
+        <button mat-raised-button color="primary" type="submit">Login</button>
+    </div>
+</form>
+
