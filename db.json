@@ -2,16 +2,27 @@
   "New-User": [
     {
       "id": 1,
-      "employeeType": "salaried",
+      "employeeType": "selfEmployeed",
       "mobileNo": "9309134411",
       "pan": "ACRPF047K",
       "firstName": "Smitesh",
       "lastName": "Firke",
-      "dob": "1997-08-09T18:30:00.000Z",
+      "dob": "1997-08-10T18:30:00.000Z",
       "gender": "male",
       "pincode": "445102",
       "city": "Yavatmal"
+    },
+    {
+      "id": 2,
+      "employeeType": "salaried",
+      "mobileNo": "9096860137",
+      "pan": "ACRPF047K",
+      "firstName": "Sham",
+      "lastName": "Kumar",
+      "dob": "1997-04-13T18:30:00.000Z",
+      "gender": "male",
+      "pincode": "445111",
+      "city": "Pune"
     }
-    
   ]
 }

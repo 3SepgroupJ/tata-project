@@ -26,4 +26,14 @@ export class NewUserService {
     return this.http.get(url, { 'headers': this.httpHeaders});
   }
 
+  putDataToServer(endpoint:string, requestBody:any){
+    let url = this.baseUrl + endpoint ;
+    return this.http.put(url,requestBody,{'headers':this.httpHeaders});
+  }
+
+  deleteDatafromServer(endpoint:string){
+    let url = this.baseUrl + endpoint ;
+    return this.http.delete(url,{'headers':this.httpHeaders})
+  }
+
 }
