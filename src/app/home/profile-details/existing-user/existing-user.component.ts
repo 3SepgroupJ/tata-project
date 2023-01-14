@@ -21,39 +21,23 @@ export class ExistingUserComponent implements OnInit {
       'mobileNo':[''],
       'pan':['']
     })
-// this.logginSuccess();
   }
-
-
-  submitLoginForm(){
-     this.loginform.value
-     this.loginUser();
-    //  this. getUserDetailsfromServer();
-    }
-
-    // getUserDetailsfromServer(){
-    //   this.existinguserService.getDetailsFromServer("New-User").subscribe((data: any) => {
-    //     if (data && data.length > 0) {
-    //       this.userDetails = data;
-    //       if(this.userDetails == this.loginform.value) 
-    //       this.router.navigate(['existing-user-profile-details']);   
-    //       }
-    //   } 
-    //   )
-    // } 
-
-    loginUser(){
+  
+    submitLoginForm(){
       this.http.get<any>('http://localhost:3000/New-User')
-      .subscribe((res:any)=>{
-        const user = res.find((a:any)=>{
-          a.firstName == this.loginform.value.firstName
-        })
-        if(user){
-          this.router.navigate(['existing-user-profile-details']);
-        }
-      });
-      
-    }
+        .subscribe((res:any)=>{
+          const user = res.find((a:any)=>{
+            return a.firstName === this.loginform.value.firstName && a.pan === this.loginform.value.pan && a.mobileNo === this.loginform.value.mobileNo
+          })
+          if(user){
+            alert("Login Success!!");
+            this.router.navigate(['existing-user-profile-details']);
+          }
+          else{
+            alert("User not found!")
+          }
+});
+}
 }
 
 export class existingUser{

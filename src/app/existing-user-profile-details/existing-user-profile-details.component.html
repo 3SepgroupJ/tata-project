@@ -3,6 +3,7 @@
         <table class="table table-striped m-2">
             <thead>
                 <tr>
+                    <th scope="col">Action</th>
                     <th scope="col">Coustomer Type</th>
                     <th scope="col">Coustomer First Name</th>
                     <th scope="col">Coustomer Lasst Name</th>
@@ -16,6 +17,8 @@
             </thead>
             <tbody>
                 <tr *ngFor="let item of userDetails; let i=index">
+                    <td><button class="btn btn-primary mt-2" (click)="editCoustmerDetails(item.id)"><i class="bi bi-pencil-square"></i>Edit</button>
+                        <button class="btn btn-danger mt-2"(click)="deleteCoustmerDetailsfromServer(item.id,i)"><i class="bi bi-trash3"></i>Delete</button></td>
                     <td>{{item.employeeType}}</td>
                     <td>{{item.firstName}}</td>
                     <td>{{item.lastName}}</td>
@@ -30,8 +33,8 @@
         </table>
         
         <div class="row">
-            <button class="btn btn-primary mt-2">Edit</button>
-            <button class="btn btn-danger mt-2">Delete</button>
+            
+            
         </div>
     </div>
 </div>
