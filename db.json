@@ -7,7 +7,7 @@
       "pan": "ACRPF047K",
       "firstName": "Smitesh",
       "lastName": "Firke",
-      "dob": "1997-08-10T18:30:00.000Z",
+      "dob": "1997-08-09T18:30:00.000Z",
       "gender": "male",
       "pincode": "445102",
       "city": "Yavatmal"
@@ -23,6 +23,536 @@
       "gender": "male",
       "pincode": "445111",
       "city": "Pune"
+    },
+    {
+      "id": 3,
+      "employeeType": "others",
+      "mobileNo": "9922588264",
+      "pan": "ACRPF047K",
+      "firstName": "Hrushikesh",
+      "lastName": "Ingole",
+      "dob": "1997-08-15T18:30:00.000Z",
+      "gender": "male",
+      "pincode": "445102",
+      "city": "Yavatmal"
+    },
+    {
+      "id": 4,
+      "employeeType": "salaried",
+      "mobileNo": "9309134411",
+      "pan": "ACRPF047K",
+      "firstName": "Smitesh",
+      "lastName": "Firke",
+      "dob": "1997-08-09T18:30:00.000Z",
+      "gender": "male",
+      "pincode": "445102",
+      "city": "Yavatmal"
+    }
+  ],
+  "LoggedInMembers": [
+    {
+      "fname": "Smitesh",
+      "lname": "Firke",
+      "loginid": "Smitesh123",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "loginid": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "loginid": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 4
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 5
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 6
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 7
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 8
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 9
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 10
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 11
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 12
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 13
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 14
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 15
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 16
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 17
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 18
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 19
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 20
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 21
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 22
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 23
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 24
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 25
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 26
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 27
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 28
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 29
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 30
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 31
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 32
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 33
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 34
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 35
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 36
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 37
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 38
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 39
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 40
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 41
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 42
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 43
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 44
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 45
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 46
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 47
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 48
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 49
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 50
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 51
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 52
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 53
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 54
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 55
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 56
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 57
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 58
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 59
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 60
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 61
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 62
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 63
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 64
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 65
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 66
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 67
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 68
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 69
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 70
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 71
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "loginid": null,
+      "password": null,
+      "id": 72
     }
   ]
 }

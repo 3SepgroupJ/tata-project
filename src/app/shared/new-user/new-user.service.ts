@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class NewUserService {
+  submitLoginForm: any;
   patchValue(data: any) {
     throw new Error('Method not implemented.');
   }

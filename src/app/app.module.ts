@@ -29,6 +29,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { ExistingUserProfileDetailsComponent } from './existing-user-profile-details/existing-user-profile-details.component';
 import {MatTableModule} from '@angular/material/table';
+import { LoginComponent } from './component/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
 
 
 const MaterialModules = [
@@ -60,6 +62,8 @@ const MaterialModules = [
     OnlyNumberDirective,
     DialogBoxComponent,
     ExistingUserProfileDetailsComponent,
+    LoginComponent,
+    SignupComponent
     
   ],
   imports: [

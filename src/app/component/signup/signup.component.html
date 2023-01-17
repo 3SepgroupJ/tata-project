@@ -1,0 +1,27 @@
+<div class="container d-flex justify-content-center" >
+    <div class="col-md-4 shadow p-3">
+        <div class="alert alert-success" role="alert" *ngIf="alert">
+            Logging Successfully!
+          </div>
+        <form [formGroup]="signUpForm" (ngSubmit)="userSignUp()">
+            <div class="mb-3">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="fname" value="fname"  formControlName="fname">
+            </div>
+            <div class="mb-3">
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lname" value="lname"  formControlName="lname">
+            </div>
+            <div class="mb-3">
+                <label for="loginid" class="form-label">Login Id</label>
+                <input type="text" class="form-control" id="loginid" value="loginid" formControlName="loginid">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" value="password" formControlName="password">
+            </div>
+            <button type="submit" class="btn btn-primary ms-2">Submit</button>
+            <button type="button" class="btn btn-primary ms-2" routerLink="/login">Login</button>
+        </form>
+    </div>
+</div>

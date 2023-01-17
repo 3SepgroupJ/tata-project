@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { interval } from 'rxjs';
+
 
 
 @Component({
