@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { IDeactivateInterface } from 'src/app/guards/can-deactivate.guard';
 import { NewUserService } from 'src/app/shared/new-user/new-user.service';
 import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
 
@@ -10,7 +12,7 @@ import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
   templateUrl: './new-user.component.html',
   styleUrls: ['./new-user.component.scss']
 })
-export class NewUserComponent implements OnInit {
+export class NewUserComponent implements OnInit, IDeactivateInterface{
   customerObj:Customer=new Customer();
   employeeType:any=[
     {value:"salaried" ,viewValue:"Salaried"},
@@ -27,6 +29,7 @@ export class NewUserComponent implements OnInit {
   selectCoustmerId!: number;
   editAction!: boolean;
   constructor(private dialog:MatDialog, private fb:FormBuilder, private newuserservice:NewUserService, private route:ActivatedRoute,private router:Router) { }
+  
 
   ngOnInit(): void {
     this.customerForm = this.fb.group({
@@ -63,8 +66,23 @@ export class NewUserComponent implements OnInit {
       this.updateCoustmerDetails(this.selectCoustmerId);
       this.router.navigate(['existing-user-profile-details']);
     }else{
+      this.showConfirm();
       this.sendDetailstoServer();
     }
+    }
+
+    showConfirm(): boolean | Promise<boolean> | Observable<boolean> {
+      if(!this.customerForm.dirty){
+       var Isconfirm = confirm ("Please Fill the Details First");
+       if(Isconfirm){
+        return true;
+       }else{
+        return false;
+       }
+      }else{
+        return true;
+      }
+
     }
 
   sendDetailstoServer(){
